@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>川合 海音</title>
+  </head>
+  <body>
+    <header class="header-nav">
+      <nav><a href="#first-block">0歳~12歳</a></nav>
+      <nav><a href="#second-block">13歳~18歳</a></nav>
+      <nav><a href="#third-block">19歳~</a></nav>
+    </header>
+
+    <div id="first-block">
+      <p>
+        生年月日：1999年4月2日<br />
+        出身地：東京都府中市<br />
+        血液型：A型<br />
+        <br />
+        小学校にヤギがいた
+      </p>
+    </div>
+    <div id="second-block">
+      <a href="https://www.wasedasaga.jp/" target="_blank">僕の青春はここ</a>
+    </div>
+    <div id="third-block"></div>
+    <h3>僕はどっち？</h3>
+    <div class="button-wrapper">
+      <button id="button1">左</button>
+      <button id="button2">右</button>
+    </div>
+    <footer>
+      <span>Copyright &copy; KAWAI KAINE All Rights Reserved.</span>
+    </footer>
+    <style>
+      .header-nav {
+        background-color: #000;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      nav {
+        margin-right: 5%;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #f00;
+      }
+
+      #first-block {
+        height: 100px;
+        background-color: #fff;
+        text-align: center;
+        padding: 100px;
+      }
+
+      #second-block {
+        background-image: url("intro2.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+      }
+
+      #third-block {
+        background-image: url("intro3.jpg");
+        background-size: cover;
+        width: 800px;
+        height: 800px;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 50px;
+      }
+
+      button {
+        font-size: 30px;
+      }
+
+      .button-wrapper {
+        text-align: center;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 50px;
+        background-color: #000;
+        font-size: 15px;
+        color: #fff;
+      }
+    </style>
+
+    <script src="intro.js"></script>
+  </body>
+</html>
